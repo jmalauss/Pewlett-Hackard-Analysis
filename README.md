@@ -1,5 +1,7 @@
 # Pewlett-Hackard-Analysis
 
+
+```
 departments
 -
 dept_no varchar
@@ -41,3 +43,4 @@ emp_no int pk fk -< employees.emp_no
 title varchar
 from_date date
 to_date date
+```
