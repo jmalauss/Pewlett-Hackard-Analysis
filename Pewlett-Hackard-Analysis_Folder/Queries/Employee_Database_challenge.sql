@@ -47,3 +47,13 @@ FROM retirement_titles
 WHERE to_date = '1999-01-01'
 ORDER BY first_name, emp_no, to_date DESC;
 
+--for additional tables in deliverable 3
+SELECT DISTINCT ON (first_name) emp_no, first_name, last_name, title
+INTO mentee_titles
+FROM mentorship_eligibility
+ORDER BY first_name, emp_no, to_date DESC;
+
+SELECT COUNT (title) AS "count", mt.title
+INTO available_mentees
+FROM mentee_titles AS mt
+GROUP BY mt.title;
