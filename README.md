@@ -1,46 +1,31 @@
 # Pewlett-Hackard-Analysis
 
+### The written analysis has the following:
 
-```
-departments
--
-dept_no varchar
-dept_name varchar
+#### The purpose of the new analysis is well defined.
 
-dept_emp
--
-emp_no int pk fk -< employees.emp_no
-dept_no int
-from_date date
-to_date date
+	The purpose of this analysis was to help Bobby formulate a plan to combat the impending "silver tsunami" of employees reaching retirement age. Our goal was to determine how many employees
 
-dept_manager
--
-dept_no pk fk - departments.dept_no
-emp_no int pk fk - employees.emp_no
-from_date date
-to_date date
+##### Deliverables: 
 
-employees
--
-emp_no int
-birth_date date
-first_name varchar
-last_name varchar
-gender varchar
-hire_date date
+	- **The Number of Retiring Employees by Title**
 
-salaries
--
-emp_no int pk fk - employees.emp_no
-salary int
-from_date date
-to_date date
+	- **The Employees Eligible for the Mentorship Program**
 
-titles
--
-emp_no int pk fk -< employees.emp_no
-title varchar
-from_date date
-to_date date
-```
+#### Results: There is a bulleted list with four major points from the two analysis deliverables.
+
+	1. 
+
+	2. 
+
+	3. 
+
+	4.
+
+
+#### Summary: The summary addresses the two questions and contains two additional queries or tables that may provide more insight.
+
+	1. How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+
+
+	2. Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?

@@ -42,6 +42,17 @@ CREATE TABLE titles (
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
 );
 
+
+-- this code works to populate the data, the above does not.
+CREATE TABLE titles (
+	emp_no INT NOT NULL,
+	title VARCHAR NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE,
+	PRIMARY KEY (emp_no, title, from_date),
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
+);
+
 CREATE TABLE dept_emp (
 	emp_no INT NOT NULL,
 	dept_no VARCHAR NOT NULL,
@@ -88,6 +99,8 @@ FROM employees
 WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 
+
+--Code for Module 7 retirement_info
 SELECT first_name, last_name
 INTO retirement_info
 FROM employees
@@ -95,3 +108,49 @@ WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 
 SELECT * FROM retirement_info;
+
+
+--Code for creating ERD
+```
+departments
+-
+dept_no varchar
+dept_name varchar
+
+dept_emp
+-
+emp_no int pk fk -< employees.emp_no
+dept_no int
+from_date date
+to_date date
+
+dept_manager
+-
+dept_no pk fk - departments.dept_no
+emp_no int pk fk - employees.emp_no
+from_date date
+to_date date
+
+employees
+-
+emp_no int
+birth_date date
+first_name varchar
+last_name varchar
+gender varchar
+hire_date date
+
+salaries
+-
+emp_no int pk fk - employees.emp_no
+salary int
+from_date date
+to_date date
+
+titles
+-
+emp_no int pk fk -< employees.emp_no
+title varchar
+from_date date
+to_date date
+```
