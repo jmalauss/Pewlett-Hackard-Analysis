@@ -41,7 +41,8 @@ GROUP BY mt.title;
 
 The code above creates a table called mentee_titles that displays the unique amount of mentees and their titles. The second table available_mentees displays how many mentees are available per job title:
 
-available_mentees![available_mentee](https://github.com/jmalauss/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis_Folder/available_mentees_table.png)retiring_titles![retiring_titles](https://github.com/jmalauss/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis_Folder/retiring_titles_table.png)
+available_mentees![available_mentee](https://github.com/jmalauss/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis_Folder/available_mentees_table.png)
+retiring_titles![retiring_titles](https://github.com/jmalauss/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis_Folder/retiring_titles_table.png)
 
 2. Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
