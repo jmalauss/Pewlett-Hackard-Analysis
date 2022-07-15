@@ -26,5 +26,25 @@ The purpose of this analysis was to help Bobby formulate a plan to combat the im
 
 1. How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
+- 16 roles will need to be filled. Luckily, the mentorship_eligibility table has identified successors for those who are retiring. 
+```
+SELECT DISTINCT ON (first_name) emp_no, first_name, last_name, title
+INTO mentee_titles
+FROM mentorship_eligibility
+ORDER BY first_name, emp_no, to_date DESC;
+
+SELECT COUNT (title) AS "count", mt.title
+INTO available_mentees
+FROM mentee_titles AS mt
+GROUP BY mt.title;
+```
+
+The code above creates a table called mentee_titles that displays the unique amount of mentees and their titles. The second table available_mentees displays how many mentees are available per job title:
+
+**mentee_titles and retiring_titles**
+
+
 
 2. Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+There are not enough mentors for the available mentees, but there are plenty of mentees! In other words, the employees that are getting ready to retire can consider hosting a mentorship with classroom-style learning, to accommodate more mentees per mentor. Additionally, the mentors can just choose one successor, and develop a plan for them to cascade their knowledge to the rest of the available mentees after the mentor retires - "Teaching the teacher".
