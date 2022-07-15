@@ -43,7 +43,7 @@ The code above creates a table called mentee_titles that displays the unique amo
 
 **mentee_titles and retiring_titles**
 
-
+![available_mentee](https://github.com/jmalauss/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis_Folder/available_mentees_table.png)![retiring_titles](https://github.com/jmalauss/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis_Folder/retiring_titles_table.png)
 
 2. Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
