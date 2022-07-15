@@ -18,10 +18,9 @@ The purpose of this analysis was to help Bobby formulate a plan to combat the im
 
 2. The retirement_titles table was created using JOIN with employees as the LEFT table, and titles as the RIGHT. This allowed us to create a table that displays every every employee born in between January 1, 1952 and December 31, 1955. We then needed to narrow down the data by creating the unique_titles table. This was done by using DISTINCT ON (). By using this on their name, we could ensure there wouldn't be duplicate employees. The retiring_titles table was created to understand how many employees are retiring per job title. This was done by creating a "count" column, to represent the employees in each role. 
 
-3. The mentorship_eligibility table displays employees who were born between January 1, 1965 and December 31, 1965. By filtering the data with the WHERE statement by the birth_date column.
+3. The mentorship_eligibility table displays employees who were born between January 1, 1965 and December 31, 1965. By filtering the data with the WHERE statement by the birth_date column. We can also see their job titles, which should make it easier to match them up with a mentor. 
 
-4.
-
+4. The INTO clause is an essential tool to conduct analyses on tables. We were able to create tables based on the keys and columns present in other tables to create new tables, with specific information. Without even joining tables, you can use aggregrate functions to discover new data in a new table.
 
 #### Summary: The summary addresses the two questions and contains two additional queries or tables that may provide more insight.
 
